@@ -1,15 +1,25 @@
 # Amrvis-container
 
-Amrvis documentation: https://amrex-codes.github.io/amrex/docs_html/Visualization.html#amrvis
+The Amrvis documentation is available [here](https://amrex-codes.github.io/amrex/docs_html/Visualization.html#amrvis).
 
 ## Running on macOS
 
 ### Install XQuartz and allow remote clients
 There is a detailed guide available [here](https://gist.github.com/sorny/969fe55d85c9b0035b0109a31cbcb088#step-by-step-guide) on how to do this.
 
+[TL;DR](https://en.wikipedia.org/wiki/TL;DR) version:
+1. Install XQuartz
+```console
+$ brew install --cask xquartz
+$ open -a XQuartz
+```
+2. Go to `XQuartz -> Settings... -> Security` and check the box for "Allow connections from network clients".
+3. Reboot your computer (this step is required).
+
 ### Run the container
 Run Amrvis from the command line like this:
 ```console
+$ open -a XQuartz
 $ xhost +localhost
 localhost being added to access control list
 $ docker run -e DISPLAY=docker.for.mac.host.internal:0 ghcr.io/benwibking/amrvis-container:latest
