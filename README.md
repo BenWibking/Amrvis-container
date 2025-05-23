@@ -23,18 +23,14 @@ $ open -a XQuartz
 ### Run the container
 Run Amrvis from the command line like this:
 ```console
-$ open -a XQuartz
-$ xhost +localhost
+$ ./amrvis3d.sh
 localhost being added to access control list
-$ docker run --platform linux/amd64 -v `pwd`:/home/vscode/data -e DISPLAY=docker.for.mac.host.internal:0 ghcr.io/benwibking/amrvis-container:main
-WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
 Initializing AMReX (25.05-27-g78268f16d626)...
 AMReX (25.05-27-g78268f16d626) initialized
 Cannot find amrvis defaults file:  ./amrvis.defaults
 Cannot find amrvis defaults file:  /home/vscode/amrvis.defaults
 Reading defaults from:  /home/vscode/.amrvis.defaults
 ```
-Note that `xhost +localhost` must be done every time.
 
 You should see a window that looks like this:
 <img width="1018" alt="Screenshot 2025-05-23 at 1 08 12 PM" src="https://github.com/user-attachments/assets/a0e6a573-b235-45da-a2ad-4fee69007b21" />
