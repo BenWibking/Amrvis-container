@@ -23,7 +23,7 @@ $ open -a XQuartz
 ### Run the container
 Run Amrvis from the command line like this:
 ```console
-$ ./amrvis3d.sh
+$ ./launch_amrvis3d_macos.sh
 localhost being added to access control list
 Initializing AMReX (25.05-27-g78268f16d626)...
 AMReX (25.05-27-g78268f16d626) initialized
