@@ -7,13 +7,13 @@ RUN apt-get --yes -qq update \
                       python3-dev python3-numpy python3-matplotlib python3-pip pipx \
                       libopenmpi-dev \
                       libhdf5-mpi-dev \
-		      libmotif-dev \
+		      libmotif-dev libxext-dev libxpm-dev \
  && apt-get --yes -qq clean \
  && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/AMReX-Codes/amrex.git
-
 RUN git clone https://github.com/AMReX-Codes/Amrvis.git
+RUN git clone https://ccse.lbl.gov/pub/Downloads/volpack.git
 COPY GNUmakefile Amrvis/GNUmakefile
 RUN cd Amrvis && make -j`nproc`
 
