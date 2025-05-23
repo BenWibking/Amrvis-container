@@ -51,7 +51,7 @@ It also works over X11 from a remote HPC cluster, e.g. Frontier.
 
 ## Running on Windows
 
-This also runs on Windows inside a [WSL2[(https://learn.microsoft.com/en-us/windows/wsl/install) instance.
+This also runs on Windows inside a [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) instance.
 * First, create a WSL2 instance and [install Singularity](https://docs.sylabs.io/guides/latest/admin-guide/installation.html#install-from-provided-rpm-deb-packages) inside it.
 * Then, inside the WSL2 instance, run the Linux launcher script.
 
