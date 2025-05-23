@@ -2,9 +2,7 @@ FROM mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04
 
 RUN apt-get --yes -qq update \
  && apt-get --yes -qq upgrade \
- && apt-get --yes -qq install build-essential \
-                      git cmake clangd gcc g++ \
-                      libopenmpi-dev \
+ && apt-get --yes -qq install build-essential m4 \
 		      libmotif-dev libxext-dev libxpm-dev \
  && apt-get --yes -qq clean \
  && rm -rf /var/lib/apt/lists/*
