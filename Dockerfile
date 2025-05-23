@@ -4,16 +4,16 @@ RUN apt-get --yes -qq update \
  && apt-get --yes -qq upgrade \
  && apt-get --yes -qq install build-essential \
                       git cmake clangd gcc g++ \
-                      python3-dev python3-numpy python3-matplotlib python3-pip pipx \
                       libopenmpi-dev \
-                      libhdf5-mpi-dev \
 		      libmotif-dev libxext-dev libxpm-dev \
  && apt-get --yes -qq clean \
  && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/AMReX-Codes/amrex.git
-RUN git clone https://github.com/AMReX-Codes/Amrvis.git
-RUN git clone https://ccse.lbl.gov/pub/Downloads/volpack.git
+## build Volpack
+RUN git clone https://ccse.lbl.gov/pub/Downloads/volpack.git && cd volpack && make -j`nproc`
+
+## build Amrvis
+RUN git clone https://github.com/AMReX-Codes/amrex.git && git clone https://github.com/AMReX-Codes/Amrvis.git
 COPY GNUmakefile Amrvis/GNUmakefile
 RUN cd Amrvis && make -j`nproc`
 
