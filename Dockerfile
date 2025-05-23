@@ -29,4 +29,4 @@ COPY amrvis.defaults /home/vscode/.amrvis.defaults
 
 WORKDIR /home/vscode
 USER vscode
-CMD [ "/bin/bash" ]
+CMD [ "/Amrvis3D/amrvis3d.gnu.ex" ]
