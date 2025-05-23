@@ -5,7 +5,7 @@ Amrvis documentation: https://amrex-codes.github.io/amrex/docs_html/Visualizatio
 ## Running on macOS
 
 ### Install XQuartz and allow remote clients
-There is a detailed guide available [here](https://gist.github.com/sorny/969fe55d85c9b0035b0109a31cbcb088) on how to do this.
+There is a detailed guide available [here](https://gist.github.com/sorny/969fe55d85c9b0035b0109a31cbcb088#step-by-step-guide) on how to do this.
 
 ### Run the container
 Run Amrvis from the command line like this:
