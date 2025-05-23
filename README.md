@@ -36,3 +36,15 @@ You should see a window that looks like this:
 <img width="1018" alt="Screenshot 2025-05-23 at 1 08 12 PM" src="https://github.com/user-attachments/assets/a0e6a573-b235-45da-a2ad-4fee69007b21" />
 
 Your current working directory on the host is bind-mounted into `/home/vscode/data`.
+
+## Running on Linux
+
+This also runs on Linux using Singularity:
+```
+wibking@login11:~/Amrvis-container> ./launch_amrvis3d_linux.sh
+INFO:    Using cached SIF image
+Initializing AMReX (25.05-27-g78268f16d626)...
+AMReX (25.05-27-g78268f16d626) initialized
+Reading defaults from:  ./amrvis.defaults
+```
+It also works over X11 from a remote HPC cluster, e.g. Frontier.
