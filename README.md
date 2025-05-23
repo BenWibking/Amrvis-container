@@ -22,7 +22,7 @@ Run Amrvis from the command line like this:
 $ open -a XQuartz
 $ xhost +localhost
 localhost being added to access control list
-$ docker run -v `pwd`:/home/vscode/data -e DISPLAY=docker.for.mac.host.internal:0 ghcr.io/benwibking/amrvis-container:latest
+$ docker run --platform linux/amd64 -v `pwd`:/home/vscode/data -e DISPLAY=docker.for.mac.host.internal:0 ghcr.io/benwibking/amrvis-container:main
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
 Initializing AMReX (25.05-27-g78268f16d626)...
 AMReX (25.05-27-g78268f16d626) initialized
