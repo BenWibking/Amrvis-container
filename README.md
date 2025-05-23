@@ -1,5 +1,7 @@
 # Amrvis-container
 
+![Screenshot 2025-05-23 at 1 34 06 PM](https://github.com/user-attachments/assets/26c4c8df-4768-4cd7-ade5-15229741c501)
+
 A short guide to Amrvis is available [here](https://amrex-codes.github.io/amrex/docs_html/Visualization.html#amrvis).
 
 The complete LaTeX-formatted documentation is available as a [PDF](Amrvis.pdf).
