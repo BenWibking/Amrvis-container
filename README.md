@@ -48,3 +48,11 @@ AMReX (25.05-27-g78268f16d626) initialized
 Reading defaults from:  ./amrvis.defaults
 ```
 It also works over X11 from a remote HPC cluster, e.g. Frontier.
+
+## Running on Windows
+
+This also runs on Windows inside a WSL2 instance.
+* First, create a WSL2 instance and install Singularity inside it.
+* Then, inside the WSL2 instance, run the Linux launcher script.
+
+![Screenshot 2025-05-23 185511](https://github.com/user-attachments/assets/cf4cbf66-f153-4e45-8543-aa4afbd07514)
