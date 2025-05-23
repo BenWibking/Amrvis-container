@@ -21,3 +21,6 @@ Cannot find amrvis defaults file:  /home/vscode/amrvis.defaults
 Reading defaults from:  /home/vscode/.amrvis.defaults
 ```
 Note that `xhost +localhost` must be done every time.
+
+You should see a window that looks like this:
+<img width="1018" alt="Screenshot 2025-05-23 at 1 08 12 PM" src="https://github.com/user-attachments/assets/a0e6a573-b235-45da-a2ad-4fee69007b21" />
