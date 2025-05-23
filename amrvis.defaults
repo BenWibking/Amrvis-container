@@ -1,8 +1,7 @@
 palette               Pal8.new
 palette               Palette
-initialderived        temp
-initialderived        vfrac
-initialderived        density
+initialderived        temperature
+initialderived        gasDensity
 initialscale          4
 initialscale          2
 initialscale          1

@@ -26,6 +26,7 @@ RUN cd Amrvis3D && make -j`nproc`
 ## copy settings
 COPY .bashrc /home/vscode/.bashrc
 COPY amrvis.defaults /home/vscode/.amrvis.defaults
+COPY Palette /home/vscode/Palette
 
 WORKDIR /home/vscode
 USER vscode
