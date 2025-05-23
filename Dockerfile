@@ -7,6 +7,7 @@ RUN apt-get --yes -qq update \
                       python3-dev python3-numpy python3-matplotlib python3-pip pipx \
                       libopenmpi-dev \
                       libhdf5-mpi-dev \
+		      libmotif-dev \
  && apt-get --yes -qq clean \
  && rm -rf /var/lib/apt/lists/*
 
